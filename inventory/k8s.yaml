@@ -3,15 +3,12 @@ all:
     k8s-00:
       ansible_host: 10.10.10.202
       ansible_user: rojo
-      ansible_ssh_private_key_file: "~/.ssh/id_ed25519.pub"
     k8s-01:
       ansible_host: 10.10.10.253
       ansible_user: rojo
-      ansible_ssh_private_key_file: "~/.ssh/id_ed25519.pub"
     k8s-02:
       ansible_host: 10.10.10.215
       ansible_user: rojo
-      ansible_ssh_private_key_file: "~/.ssh/id_ed25519.pub"
   children:
     k8s:
       hosts:
